@@ -11,7 +11,7 @@ if (isset($argv[2])) {
     parse_str($argv[2], $params);
 }
 
-require_once dirname(__FILE__) . '/phprpc/phprpc_client.php';
+require_once dirname(__FILE__) . '/../src/phprpc/phprpc_client.php';
 
 $client = new PHPRPC_Client();
 $client->setProxy(NULL);  

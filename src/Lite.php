@@ -22,11 +22,11 @@ class Lite {
     protected $phalapiProxy;
 
     public function __construct($phalapi = NULL) {
-        $this->phalapiProxy = new PHPRPC_PhalApi($phalapi);
+        $this->phalapiProxy = new PhalApi($phalapi);
     }
 
     public function response() {
-        $server = new PHPRPC_Server();  
+        $server = new \PHPRPC_Server();  
 
         $server->add(array('response'), $this->phalapiProxy);
 
