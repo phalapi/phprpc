@@ -1,0 +1,26 @@
+{
+    "name": "phalapi/phprpc",
+    "description": "PhalApi 2.x 扩展类库：PHPRPC",
+    "type": "library",
+    "keywords": [
+        "phalapi", "phalapi-phprpc", "phprpc"
+    ],
+    "license": "GPL-3.0+",
+    "minimum-stability": "dev",
+    "homepage": "https://www.phalapi.net/",
+    "authors": [
+        {
+            "name": "dogstar huang",
+            "email": "chanzonghuang@gmail.com",
+            "homepage": "http://my.oschina.net/dogstar",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "PhalApi\\PHPRPC\\": "src"
+        }
+    } 
+}
