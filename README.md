@@ -66,7 +66,16 @@ array(3) {
 ```
 
 ## phprpc协议调试
-同样，为了方便进行phprpc协议下接口调用的调试，我们提供了一个脚本，如上面的对?s=App.Site.Index调用，使用脚本即为：
+
+为了方便进行phprpc协议下接口调用的调试，我们提供了一个脚本小工具。
+
+Usage为：
+```
+$ php ./vendor/phalapi/phprpc/bin/check.php 
+Usage: ./vendor/phalapi/phprpc/bin/check.php <url> [POST data]
+```
+
+如上面的对?s=App.Site.Index调用，使用脚本即为：
 
 ```bash
 $ php ./vendor/phalapi/phprpc/bin/check.php http://localhost/phalapi/public/phprpc_index.php?s=App.Site.Index
