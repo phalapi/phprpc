@@ -19,11 +19,9 @@ class PhalApi {
     public function response($params = NULL) {
         $paramsArr = json_decode($params, TRUE);
         if ($paramsArr !== FALSE) {
-            \PhalApi\DI()->request = new Request(array_merge($_GET, $paramsArr));
-        } else {
-			\PhalApi\DI()->request = new Request($_GET);
-		}
-
+            $_GET = array_merge($_GET, $paramsArr);
+        }
+	\PhalApi\DI()->request = new Request($_GET);
         $rs = $this->phalapi->response();
 
         return $rs->getResult();
